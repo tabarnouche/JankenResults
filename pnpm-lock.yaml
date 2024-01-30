@@ -25,6 +25,9 @@ devDependencies:
   '@unocss/reset':
     specifier: ^0.58.4
     version: 0.58.4
+  tabulator-tables:
+    specifier: ^5.5.4
+    version: 5.5.4
   unocss:
     specifier: ^0.58.4
     version: 0.58.4(postcss@8.4.33)(vite@5.0.12)
@@ -3645,6 +3648,10 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
     dev: false
+
+  /tabulator-tables@5.5.4:
+    resolution: {integrity: sha512-hVcITAfO2G3gm2ILW9GN2ORgcmNsbVmC+Q+2E3xfthIE9xtFxGKSbhbsNk39h11Uzm9GNUvjGfos1IVKrfeeOA==}
+    dev: true
 
   /tar-fs@2.1.1:
     resolution: {integrity: sha512-V0r2Y9scmbDRLCNex/+hYzvp/zyYjvFbHPNgVTKfQvVrb6guiE/fxP+XblDNR011utopbkex2nM4dHNV6GDsng==}

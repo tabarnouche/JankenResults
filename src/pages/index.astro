@@ -1,5 +1,6 @@
 ---
-
+const TITLE = '「来週もまた、みてくださいね」'
+const DESCRIPTION = '「うふふふふふふ」'
 ---
 
 <html lang="ja">
@@ -8,9 +9,32 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{TITLE}</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<div id="example-table"></div>
 	</body>
 </html>
+
+<script>
+//@ts-ignore
+import {Tabulator} from 'tabulator-tables';
+import 'tabulator-tables/dist/css/tabulator.min.css';
+import results from '../results.json';
+
+let table = new Tabulator("#example-table", {
+	frozenRows: 1,
+    columnDefaults:{
+        width: '20%',
+    },
+	columns: [
+		{title: "回", field: "number", sorter: "number"},
+		{title: "年", field: "year", sorter: "number"},
+		{title: "月", field: "month", sorter: "number"},
+		{title: "日", field: "day", sorter: "number"},
+		{title: "結果", field: "result", sorter: "string"},
+	],
+    data: results,
+    autoColumns: true,
+});
+</script>

@@ -18,6 +18,7 @@
     "@iconify-json/material-symbols": "^1.1.71",
     "@unocss/astro": "^0.58.4",
     "@unocss/reset": "^0.58.4",
+    "tabulator-tables": "^5.5.4",
     "unocss": "^0.58.4"
   }
 }
