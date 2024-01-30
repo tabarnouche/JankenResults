@@ -1,0 +1,23 @@
+{
+  "name": "",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.4.1",
+    "astro": "^4.2.6",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@iconify-json/material-symbols": "^1.1.71",
+    "@unocss/astro": "^0.58.4",
+    "@unocss/reset": "^0.58.4",
+    "unocss": "^0.58.4"
+  }
+}
