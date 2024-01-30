@@ -8,6 +8,8 @@ export default defineConfig({
         injectReset: true,
     }),
   ],
+  site: 'https://tabarnouche.github.io',
+  base: '/JankenResults',
 });
 
 declare global {
