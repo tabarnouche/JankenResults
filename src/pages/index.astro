@@ -44,15 +44,12 @@ const DESCRIPTION = '「うふふふふふふ」'
 
 <script>
 //@ts-ignore
-import {Tabulator} from 'tabulator-tables';
-import 'tabulator-tables/dist/css/tabulator.min.css';
+import {TabulatorFull as Tabulator} from 'tabulator-tables';
+import 'tabulator-tables/dist/css/tabulator.css';
 import results from '../results.json';
 
 let table = new Tabulator("#example-table", {
-	frozenRows: 1,
-    columnDefaults:{
-        width: '20%',
-    },
+    data: results,
 	columns: [
 		{title: "回", field: "number", sorter: "number"},
 		{title: "年", field: "year", sorter: "number"},
@@ -60,7 +57,9 @@ let table = new Tabulator("#example-table", {
 		{title: "日", field: "day", sorter: "number"},
 		{title: "結果", field: "result", sorter: "string"},
 	],
-    data: results,
-    autoColumns: true,
+    columnDefaults:{
+        width: '20%',
+    },
+	maxHeight: '100vh',
 });
 </script>
