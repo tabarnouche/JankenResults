@@ -60,6 +60,9 @@ let table = new Tabulator("#example-table", {
     columnDefaults:{
         width: '20%',
     },
+    initialSort:[
+        {column:"number", dir:"desc"},
+    ],
 	maxHeight: '100vh',
 });
 </script>
