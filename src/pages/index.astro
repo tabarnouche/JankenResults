@@ -14,17 +14,17 @@ const DESCRIPTION = '「うふふふふふふ」'
 
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://tabarnouche.github.io/JankenResults/" />
+		<meta property="og:url" content={Astro.url} />
 		<meta property="og:title" content={TITLE} />
 		<meta property="og:description" content={DESCRIPTION} />
-		<meta property="og:image" content="pixta_101825561_M.webp" />
+		<meta property="og:image" content={Astro.url+"/pixta_101825561_M.webp"} />
 
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image" />
-		<meta property="twitter:url" content="https://tabarnouche.github.io/JankenResults/" />
+		<meta property="twitter:url" content={Astro.url} />
 		<meta property="twitter:title" content={TITLE} />
 		<meta property="twitter:description" content={DESCRIPTION} />
-		<meta property="twitter:image" content="pixta_101825561_M.webp" />
+		<meta property="twitter:image" content={Astro.url+"/pixta_101825561_M.webp"} />
 		<!-- Meta Tags Generated with https://metatags.io -->
 
 		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
